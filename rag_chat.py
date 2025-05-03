@@ -1,4 +1,4 @@
-from web_search import search_web
+from new_web_search import search_web
 from llama_local import generate_local_llama_answer
 
 def rag_answer(question):
