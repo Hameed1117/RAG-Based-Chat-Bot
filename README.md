@@ -23,7 +23,7 @@ This project implements a **Retrieval-Augmented Generation (RAG)** chatbot power
 
 ---
 
-## ✅ What We've Done So Far
+## ✅ What's Done So Far
 
 1. 🔧 Created Python 3.10.10 virtual environment
 2. 💡 Chose **LLaMA 2 7B Chat** as our base model for generation
