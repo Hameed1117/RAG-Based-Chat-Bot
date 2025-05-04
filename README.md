@@ -110,6 +110,7 @@ Sample:
 * **Search API**: Serper.dev
 * **Engine**: llama-cpp-python
 
+
 Built with ❤️ by Khadhar Hameed Khan Pathan – a passionate AI engineer in the making.
 
 ````
