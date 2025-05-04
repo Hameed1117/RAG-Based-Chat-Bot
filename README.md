@@ -1,9 +1,3 @@
-Excellent — you're using proper version control (Git + branching), and your request for a clean, updated `README.md` and LinkedIn post is spot on.
-
----
-
-## ✅ Updated `README.md` (for pushing **current Phase 1** to GitHub)
-
 ````markdown
 # 🧠 RAG-Based ChatBot (Local LLaMA 2 + Real-Time Web Search)
 
