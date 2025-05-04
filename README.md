@@ -1,4 +1,3 @@
-````markdown
 # 🧠 RAG-Based ChatBot (Local LLaMA 2 + Real-Time Web Search)
 
 This project implements a **Retrieval-Augmented Generation (RAG)** chatbot using a local LLM and real-time web search integration — enabling factual, contextual, and up-to-date answers with zero dependency on OpenAI or remote inference.
@@ -35,7 +34,6 @@ This project implements a **Retrieval-Augmented Generation (RAG)** chatbot using
 └── venv/                  # Python 3.10.10 virtual environment
 ````
 
----
 
 ## ⚙️ Setup Instructions
 
