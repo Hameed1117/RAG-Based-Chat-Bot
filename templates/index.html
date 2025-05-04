@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🤖 RAG ChatBot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  
+
+  <div class="chat-wrapper">
+    <div class="chat-header">⚡ RAG ChatBot</div>
+    <div class="chat-body" id="chat-box"></div>
+    <form id="chat-form" class="chat-input">
+      <input type="text" id="question" placeholder="Type your message..." required autocomplete="off">
+      <button type="submit">➤</button>
+    </form>
+  </div>
+
+  
+  <script>
+    const form = document.getElementById('chat-form');
+    const questionInput = document.getElementById('question');
+    const chatBox = document.getElementById('chat-box');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const userText = questionInput.value.trim();
+      if (!userText) return;
+      appendMessage(userText, 'user');
+      questionInput.value = '';
+      appendMessage("Thinking...", 'bot', true);
+      const lastBotMsg = chatBox.querySelectorAll('.message.bot:last-of-type')[0];
+
+      try {
+        const res = await fetch("/ask", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question: userText })
+        });
+        const data = await res.json();
+        lastBotMsg.innerText = data.answer || "❌ Something went wrong.";
+        lastBotMsg.classList.remove('loading');
+      } catch {
+        lastBotMsg.innerText = "❌ Error connecting to server.";
+      }
+
+      chatBox.scrollTop = chatBox.scrollHeight;
+    });
+
+    function appendMessage(text, role, loading = false) {
+      const msg = document.createElement('div');
+      msg.className = `message ${role}` + (loading ? ' loading' : '');
+      msg.innerText = text;
+      chatBox.appendChild(msg);
+    }
+  </script>
+</body>
+</html>

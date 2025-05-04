@@ -84,3 +84,33 @@ It's worth noting that the release dates and other details of the films are subj
 🧑 You: exit
 👋 Goodbye!
 (venv) PS C:\Programming\Natural Language Processing\NLP-Rag Based Chat BOT> 
+
+
+PS C:\Programming\Natural Language Processing\NLP-Rag Based Chat BOT> & "C:/Programming/Natural Language Processing/NLP-Rag Based Chat BOT/venv/Scripts/python.exe" "c:/Programming/Natural Language Processing/NLP-Rag Based Chat BOT/rag_chat.py"
+llama_init_from_model: n_ctx_per_seq (2048) < n_ctx_train (4096) -- the full capacity of the model will not be utilized
+
+🧑 You: hi, I want to know how the whether is going to be tomorrow
+
+🤖 Bot: Based on the information provided in the web search results, here is the weather forecast for tomorrow in California, Los Angeles, and Long Beach:
+For California:
+* Saturday: Cloudy with periods of rain. High 59F. Winds SW at 5 to 10 mph. Chance of rain 90%. Humidity 80%.
+For Los Angeles:
+* Saturday: Warm air ahead of a low pressure system will bring a chance of strong thunderstorms to either side of the I-95 corridor.
+For Long Beach:
+* Saturday: Cloudy. Low 57F. Winds SW at 5 to 10 mph.
+So, it looks like there will be rain and cloudy skies in California tomorrow, with a chance of strong thunderstorms in Los Angeles. In Long Beach, it will be mostly cloudy with a low temperature of 57°F (13°C).
+
+🧑 You: what about whether in  nyc on sundays going to be tomorrow?
+
+🤖 Bot: Based on the information provided in the web search results, there is a high chance of rain in New York City on Sunday, with a 80% chance of rain showers and thunderstorms. The temperature is expected to be around 72°F (22°C) during the day, with the chance of showers increasing in the afternoon.
+Therefore, it is likely that Sunday will be a wet and cloudy day in NYC, and it may not be the best day to plan outdoor activities. It is always a good idea to check the weather forecast before heading out for the day, especially in a city like New York where the weather can be unpredictable.
+
+🧑 You: what is meaning of Thug Life
+
+🤖 Bot: Based on the web search results provided, the definition of "Thug Life" is a term that originated in the African American community and refers to a lifestyle or mindset characterized by criminal behavior, violence, and disregard for the law. The term has been popularized by various forms of media, including rap and hip-hop music, and has been associated with a certain level of glorification or romanticization of criminal activity.
+However, it is important to note that the term "Thug Life" is complex and multifaceted, and its meaning can vary depending on the context and perspective. Some people may view it as a form of social commentary or critique, while others may see it as a celebration of violent or criminal behavior.
+Tupac Shakur, a prominent rapper and artist, is often credited with popularizing the term "Thug Life." In his music and interviews, he described it as a term that refers to the struggles and challenges faced by African American males within the criminal justice system. He saw it as a way to raise awareness and bring attention to the issues faced by these individuals, and to challenge the systemic injustices that perpetuate their oppression.
+Overall, the meaning of "Thug Life" is complex and multifaceted, and can be interpreted in different ways depending on the context and perspective. While it may
+
+🧑 You: exit
+👋 Goodbye!
