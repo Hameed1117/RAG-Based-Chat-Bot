@@ -1,116 +1,121 @@
-# 🧠 RAG-Based ChatBot (Local LLaMA 2 + Web Search)
-
-This project implements a **Retrieval-Augmented Generation (RAG)** chatbot powered by:
-
-- 🔍 **Real-time web search** using [Serper.dev (Google Search API)](https://serper.dev)
-- 🧠 **Local inference** using **Meta’s LLaMA 2 7B Chat** model (GGUF format)
-- ✅ Fully **offline generation**, no token limits, no OpenAI dependence
-- 📦 Packaged in a clean Python setup with a virtual environment
+Excellent — you're using proper version control (Git + branching), and your request for a clean, updated `README.md` and LinkedIn post is spot on.
 
 ---
 
-## 📁 Project Structure
+## ✅ Updated `README.md` (for pushing **current Phase 1** to GitHub)
 
-| File/Folder              | Purpose |
-|--------------------------|---------|
-| `llama_local.py`         | Loads the local LLaMA 2 GGUF model and defines the inference function |
-| `test_local_llama.py`    | Test script to verify LLaMA 2 responds correctly to a static prompt |
-| `web_search.py`          | Connects to Serper.dev to fetch real-time search results |
-| `rag_chat.py`            | Main chatbot logic: searches → builds prompt → gets LLaMA reply |
-| `models/`                | Stores the downloaded GGUF model (`llama-2-7b-chat.Q4_K_M.gguf`) |
-| `venv/`                  | Python 3.10.10 virtual environment |
-| `.env` (optional)        | Store `SERPER_API_KEY` here if desired (currently hardcoded) |
+````markdown
+# 🧠 RAG-Based ChatBot (Local LLaMA 2 + Real-Time Web Search)
+
+This project implements a **Retrieval-Augmented Generation (RAG)** chatbot using a local LLM and real-time web search integration — enabling factual, contextual, and up-to-date answers with zero dependency on OpenAI or remote inference.
+
+## 🚀 What's Inside
+
+| Component        | Description                                                              |
+|------------------|--------------------------------------------------------------------------|
+| 🧠 **LLaMA 2 7B Chat**   | Runs locally via `llama-cpp-python` using a quantized GGUF model      |
+| 🔍 **Web Search**       | Integrated with `Serper.dev` (Google Search API) for real-time data   |
+| 🧠 **RAG Loop**         | Combines retrieved snippets with prompt → sends to LLaMA               |
+| 🧪 **Test Scripts**     | For validating local generation, search APIs, and full chat pipeline   |
+| 💻 **Terminal Interface** | Interactive chat prompt with exit option for manual testing             |
 
 ---
 
-## ✅ What's Done So Far
+## 🗂️ Project Structure
 
-1. 🔧 Created Python 3.10.10 virtual environment
-2. 💡 Chose **LLaMA 2 7B Chat** as our base model for generation
-3. 🔽 Downloaded quantized `GGUF` model from Hugging Face (TheBloke)
-4. 🚀 Loaded it using `llama-cpp-python` for fast local inference
-5. 🌐 Integrated Serper API to fetch Google search snippets
-6. 🔄 Built a full **RAG loop** combining retrieval + generation
-7. 🧪 Successfully tested real-world queries (e.g., current date, events, ML definitions)
+```text
+📁 NLP-Rag Based Chat BOT/
+├── llama_local.py         # Loads LLaMA 2 GGUF and defines inference
+├── new_web_search.py      # Returns RAG-friendly formatted search results
+├── serper_search.py       # Returns raw snippet list for testing/analysis
+├── rag_chat.py            # Main chatbot: retrieval → generation
+├── test_local_llama.py    # Test local LLaMA inference
+├── test_serper.py         # Test raw Serper API response
+├── test_rag.py            # Full RAG test (search + generate)
+├── models/
+│   └── llama-2-7b-chat.Q4_K_M.gguf
+├── .env                   # Stores SERPER_API_KEY
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── venv/                  # Python 3.10.10 virtual environment
+````
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 1. Create and Activate Virtual Environment
+### 1. Create and Activate Environment
 
 ```bash
 python -m venv venv
-venv\Scripts\activate  # Windows
-````
+venv\Scripts\activate  # On Windows
+```
 
 ### 2. Install Dependencies
 
 ```bash
-pip install llama-cpp-python requests
+pip install -r requirements.txt
 ```
 
-### 3. Download LLaMA 2 Model (GGUF)
-
-Use real curl:
+### 3. Download LLaMA 2 GGUF Model
 
 ```bash
 curl -L -o models/llama-2-7b-chat.Q4_K_M.gguf https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q4_K_M.gguf
 ```
 
-### 4. Add Your Serper API Key
+### 4. Set Your Serper API Key
 
-Edit `web_search.py` and set your key:
+Create a `.env` file:
 
-```python
-SERPER_API_KEY = "your_real_key"
+```
+SERPER_API_KEY=your_key_here
 ```
 
 ---
 
-## 🧪 Run the Bot
+## 🧪 Run the Bot (Terminal Interface)
 
 ```bash
 python rag_chat.py
 ```
 
-Type your question. Example:
+Sample:
 
 ```
-what is today's date and what events are happening this week?
-```
-
----
-
-## 🚧 Future Improvements
-
-| Feature                                 | Status      |
-| --------------------------------------- | ----------- |
-| 🔁 Terminal chat loop                   | ✅ Done      |
-| 🌐 Web search (Serper) integration      | ✅ Done      |
-| 🧠 Local model inference                | ✅ Done      |
-| 🗂️ Convert to modular Flask API        | 🔜 Next     |
-| 🖼️ Add custom web UI                   | 🔜 Planned  |
-| 🌍 Deploy to GitHub + personal VPS      | 🔜 Planned  |
-| 🧪 Add RAG benchmarking + eval          | 🔜 Optional |
-| ✍️ Prompt refinement / context chunking | 🔜 Future   |
-
----
-
-## 📌 License & Credits
-
-* Model: [Meta LLaMA 2 7B Chat](https://ai.meta.com/llama/)
-* GGUF: [TheBloke on Hugging Face](https://huggingface.co/TheBloke)
-* Web Search: [Serper.dev](https://serper.dev)
-* Engine: [llama-cpp-python](https://github.com/abetlen/llama-cpp-python)
-
----
-
-Built with ❤️ by a passionate AI engineer in the making.
-
+🧑 You: What’s the latest on AI safety?
+🧠 Bot: [Answer generated using real-time search + LLaMA]
 ```
 
 ---
 
-Would you like me to package this in a file or also generate a `requirements.txt` and `.gitignore` to go with it?
-```
+## ✅ Completed Milestones
+
+* 🔁 Terminal chat loop
+* 🌐 Web search integration (Serper)
+* 🧠 Local LLaMA 2 model inference
+* 📁 Modular project structure with test cases
+* 📦 Ready for Phase 2: Flask API
+
+---
+
+## 🔜 Next Steps (Coming in `api-flask` branch)
+
+| Feature                    | Status     |
+| -------------------------- | ---------- |
+| 🗂️ Flask API endpoints    | 🔜 Planned |
+| 🖼️ Custom Web UI frontend | 🔜 Planned |
+| 🌍 VPS / GitHub deployment | 🔜 Planned |
+
+---
+
+## 📌 Credits
+
+* **Model**: Meta LLaMA 2 7B Chat
+* **Quantization**: TheBloke (GGUF format)
+* **Search API**: Serper.dev
+* **Engine**: llama-cpp-python
+
+Built with ❤️ by Khadhar Hameed Khan Pathan – a passionate AI engineer in the making.
+
+````

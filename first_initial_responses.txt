@@ -1,0 +1,86 @@
+(venv) PS C:\Programming\Natural Language Processing\NLP-Rag Based Chat BOT> & "C:/Programming/Natural Language Processing/NLP-Rag Based Chat BOT/venv/Scripts/python.exe" "c:/Programming/Natural Language Processing/NLP-Rag Based Chat BOT/rag_chat.py"
+llama_init_from_model: n_ctx_per_seq (2048) < n_ctx_train (4096) -- the full capacity of the model will not be utilized
+Ask your question: what is machine learning?
+
+🤖 Answer:
+ Machine learning (ML) is a subfield of artificial intelligence (AI) that focuses on using data and algorithms to enable computers to learn and improve their performance without being explicitly programmed. It involves using statistical models and algorithms to analyze and learn patterns in data, and then using those patterns to make predictions or decisions without being explicitly told how to do so.
+There are several key concepts in machine learning, including:
+1. Supervised learning: In this type of machine learning, the algorithm is trained on labeled data to make predictions or decisions.
+2. Unsupervised learning: In this type of machine learning, the algorithm is trained on unlabeled data to identify patterns or structure.
+3. Reinforcement learning: In this type of machine learning, the algorithm learns by interacting with an environment and receiving feedback in the form of rewards or penalties.
+4. Deep learning: This is a type of machine learning that uses neural networks to analyze data. It is particularly useful for tasks such as image and speech recognition.
+Machine learning has many real-world uses, including:
+1. Predicting customer behavior: Machine learning algorithms can be trained on customer data to predict future behavior, such as purchases or churn.
+2. Fraud detection: Machine learning algorithms can be trained on historical data to detect fraudulent activity, such as credit card transactions or insurance claims.
+3. Image recognition
+(venv) PS C:\Programming\Natural Language Processing\NLP-Rag Based Chat BOT> & "C:/Programming/Natural Language Processing/NLP-Rag Based Chat BOT/venv/Scripts/python.exe" "c:/Programming/Natural Language Processing/NLP-Rag Based Chat BOT/rag_chat.py"
+llama_init_from_model: n_ctx_per_seq (2048) < n_ctx_train (4096) -- the full capacity of the model will not be utilized
+Ask your question: what is today's date and are there any events in this month?
+
+🤖 Answer:
+ Based on the information provided in the web search results, today is May 3, 2025. As for events in this month, there are several notable days and celebrations taking place in May 2025. Here are some of the events listed on the websites you provided:
+Today (May 3):
+* National Paranormal Day
+* Melanoma Monday
+* Constitution Memorial Day
+* Weedless Wednesday
+* Visit Your Local Quilt Shop Day
+
+This month (May):
+
+* First Friday in May: School Lunch Hero Day, National Space Day, National Life Insurance Day
+* May 7: National Teacher Appreciation Day
+* May 10: National Military Appreciation Month
+* May 15: National Peace Officers Memorial Day
+* May 17: National Tuberous Sclerosis Complex Awareness Day
+* May 21: International Space Day
+* May 22: National Maritime Day
+* May 23: National Turtle Day
+* May 28: National Hamburger Day
+
+Please note that these events and celebrations are subject to change and may not be observed nationally or globally.
+(venv) PS C:\Programming\Natural Language Processing\NLP-Rag Based Chat BOT> & "C:/Programming/Natural Language Processing/NLP-Rag Based Chat BOT/venv/Scripts/python.exe" "c:/Programming/Natural Language Processing/NLP-Rag Based Chat BOT/rag_chat.py"
+llama_init_from_model: n_ctx_per_seq (2048) < n_ctx_train (4096) -- the full capacity of the model will not be utilized
+
+🧑 You: Hi How are you I am Khadhar, I am the one who built you just few minutes ago..
+
+🤖 Bot: Hello Khadhar! It's great to hear from you! I'm just an AI assistant, I don't have personal feelings or emotions, so I can't actually feel upset or angry. However, I'm here to help you with any questions or tasks you may have. How can I assist you today?
+
+🧑 You: do you know mahesh babu ?
+
+🤖 Bot: Yes, I am familiar with Mahesh Babu. According to the web search results, Mahesh Babu is an Indian actor and film producer who works primarily in Telugu cinema. He was born on August 9, 1975, in Chennai, India. Interestingly, despite being one of the highest-paid actors in Indian cinema, Mahesh Babu revealed that he cannot read or write in Telugu. However, he is fluent in speaking and learns his dialogues.
+Mahesh Babu has received numerous awards for his work, including 8 Nandi awards for the 27 films he has acted in. He has had many super hits, blockbusters, and industry hits, including the film "Sarkar," which was a remake of the Tamil film of the same name.
+Finally, Mahesh Babu is also active on social media, particularly on Instagram, where he has over 15 million followers and has posted over 550 times. His Instagram bio describes him as an "Actor in Indian Telugu Cinema."
+
+🧑 You: what is his recent film and what his upcoming film?
+
+🤖 Bot: Based on the information provided in the web search results, Tom Cruise's recent film is "Mission: Impossible - The Final Reckoning" (2025), and his upcoming film is "The Last Rodeo" (2025) starring Jason Scott Lee and Courtney B. Neal McDonough.
+Additionally, according to the Rotten Tomatoes Movie Re-Release Calendar 2025, some movies that are currently in theaters or will be released soon include:
+* "Thunderbolts" (2025)
+* "Sinners" (2025)
+* "A Minecraft Movie" (2025)
+* "The Accountant 2" (2025)
+* "Until Dawn" (2025)
+* "The King of Kings" (2025)
+* "The Amateur" (2025)
+* "The Order" (2024) - This is a previous release, but it's mentioned as one of the best new movies to stream in May 2025.
+Please note that the information provided is based on the search results and may not be up to date or accurate.
+
+🧑 You: no i am asking about mahesh babu's recent film and upcoming film details
+
+🤖 Bot: Of course! Based on the search results, here are the recent and upcoming films of Mahesh Babu:
+Recent Films:
+1. Vettai Sooran (2022) - This is a romantic thriller film directed by Rashi and stars Mahesh Babu as the lead actor.
+2. Nenjamellam Palavannam (2022) - This is a romantic comedy film directed by S.R. Prabhu and stars Mahesh Babu as the lead actor.
+3. The Real Tiger (2022) - This is an action drama film directed by S.J. Sathyajit and stars Mahesh Babu as the lead actor.
+
+Upcoming Films:
+
+1. SSMB 29 (2025) - This is an action adventure film directed by S.S. Rajamouli and stars Mahesh Babu as the lead actor. The film is set in an African backdrop and Mahesh was asked to grow long hair, beard, and put on weight for the part.
+2. Jana Gana Mana (2026) - This is a Telugu language film directed by Krish and stars Mahesh Babu as the lead actor.
+
+It's worth noting that the release dates and other details of the films are subject to change, and
+
+🧑 You: exit
+👋 Goodbye!
+(venv) PS C:\Programming\Natural Language Processing\NLP-Rag Based Chat BOT> 

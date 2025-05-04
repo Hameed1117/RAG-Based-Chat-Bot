@@ -1,3 +1,11 @@
+"""
+serper_search.py
+----------------
+Purpose: Provides a search function that returns raw snippets (List[str])
+          from the Serper.dev API. Useful for evaluation, testing, or
+          simple integrations where full formatting is not required.
+"""
+
 import requests
 import os
 from dotenv import load_dotenv

@@ -1,3 +1,16 @@
-*
-!*.py
-!.gitignore
+# Virtual environment
+venv/
+
+# Cache
+__pycache__/
+*.pyc
+
+# Model weights
+*.gguf
+
+# Environment variables
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db

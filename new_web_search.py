@@ -1,3 +1,12 @@
+"""
+new_web_search.py
+-----------------
+Purpose: Provides formatted web search results using Serper.dev API.
+          Returns a single string that combines titles and snippets,
+          optimized for input into a language model (e.g., in a RAG prompt).
+"""
+
+
 import requests
 import os
 from dotenv import load_dotenv
